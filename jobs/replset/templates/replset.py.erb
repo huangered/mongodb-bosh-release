@@ -5,9 +5,6 @@ ips = []
 ips.append("<%= ip %>")
 <% end %>
 
-c = MongoClient("<%= p('haproxy.ip') %>", <%= p('haproxy.port.frontend') %>)
-
-
 members = []
 
 for i, ip in enumerate(ips):
